@@ -344,6 +344,14 @@ h2 {
     .subtitle-sentence {
         font-size: 1.2em
     }
+
+    .work-item-right {
+        padding-bottom: 60px;
+    }
+
+    .work-item-left {
+        padding-bottom: 60px;
+    }
 }
 
 /* for small sized screens */
@@ -373,7 +381,7 @@ h2 {
     }
 }
 
-/* for phone sized screens */
+/* for extra small screens */
 @media only screen and (max-width: 750px) {
     .skills-container {
         grid-template-columns: 1fr;
