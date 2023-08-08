@@ -2,11 +2,16 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <title>
             Evelyn Kessler
         </title>
     </head>
     <body>
+        <div id="preloader">
+            <img src="./Assets/logo.gif" alt="Loading..." id="loader-gif">
+        </div>
+        
         <header>
             <nav>
                 <ul id="navbar">
@@ -113,7 +118,7 @@
                             </ul>
                             <div class="work-links-right">
                                 <a href="https://github.com/OlinSTEP/STEPNavigationApp" target="_blank"><img src="./Assets/githubicon.svg" alt="github"></a>
-                                <a><img src="./Assets/videoicon.svg" alt="video"></a>
+                                <!-- <a><img src="./Assets/videoicon.svg" alt="video"></a> -->
                             </div>
                         </div>
                     </div>
@@ -141,13 +146,13 @@
                             <div class="work-links-left">
                                 <a href="https://github.com/EvesK/health_tracking_app_2023", target="_blank"><img src="./Assets/githubicon.svg" alt="github"></a>
                                 <a href="https://www.figma.com/file/7BoTdNBSZPXCmjJiQidCqb/Dahlia?type=design&node-id=1%3A5296&mode=design&t=H4l1tA2NbXRg5P1z-1", target="_blank"><img src="./Assets/figmaicon.svg" alt="figma"></a>
-                                <a href="", target="_blank"><img src="./Assets/videoicon.svg" alt="video"></a>
+                                <!-- <a href="", target="_blank"><img src="./Assets/videoicon.svg" alt="video"></a> -->
                             </div>
                         </div>
                     </div>
                     <div class="work-item-right">
                         <div class="work-image-right">
-                            <img src="./Assets/ExtendedLogo.png" alt="logo with text evelyn kessler, front end software engineer">
+                            <img src="./Assets/portfoliobanner.png" alt="logo with text evelyn kessler, front end software engineer">
                         </div>
                         <div class="work-text-right">
                             <h3>evelynkessler.com</h3>
@@ -157,7 +162,8 @@
                                 I designed the icons in Adobe Illustrator and used Figma to plan
                                 the layout and (AAA accessible) color scheme. I took care to organize
                                 my code using HTML containers and add alt text to make the site easy 
-                                to navigate with voiceover.
+                                to navigate with voiceover. As a bonus, I created a custom loading animation
+                                using Figma and Principle.
                             </p>
                             <ul>
                                 <li>Adobe Illustrator</li>
@@ -181,5 +187,28 @@
                 <li><a href="https://www.linkedin.com/in/evelynkessler/" target="_blank">LinkedIn</a></li>
             </ul>
         </footer>
+
+        <script>
+            var loader = document.getElementById("preloader");
+
+            $(document).ready(function() {
+            var gifElement = $('#loader-gif');
+            var originalSrc = gifElement.attr('src');
+            
+            function resetGif() {
+                gifElement.attr('src', '');
+                setTimeout(function() {
+                    gifElement.attr('src', originalSrc);
+                }, 0);
+            }
+            
+            resetGif(); // Call this function on page load to reset the GIF animation
+
+            function loadFunction() {
+                loader.style.display = "none";
+            }
+            setTimeout(loadFunction, 2500); // Call this function after 2.5 seconds to hide the loader and reveal the site
+        });
+        </script>
     </body>
 </html>
