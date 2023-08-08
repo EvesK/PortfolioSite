@@ -124,7 +124,7 @@
                     </div>
                     <div class="work-item-left">
                         <div class="work-image-left">
-                            <img src="./Assets/DahliaBanner.png" alt="colorful app screens">
+                            <img src="./Assets/dahliabanner.png" alt="colorful app screens">
                         </div>
                         <div class="work-text-left">
                             <h3>Dahlia</h3>
@@ -192,23 +192,26 @@
             var loader = document.getElementById("preloader");
 
             $(document).ready(function() {
-            var gifElement = $('#loader-gif');
-            var originalSrc = gifElement.attr('src');
-            
-            function resetGif() {
-                gifElement.attr('src', '');
-                setTimeout(function() {
-                    gifElement.attr('src', originalSrc);
-                }, 0);
-            }
-            
-            resetGif(); // Call this function on page load to reset the GIF animation
+                var loader = $("#preloader");
+                var gifElement = $('#loader-gif');
+                var originalSrc = gifElement.attr('src');
+                
+                function resetGif() {
+                    gifElement.attr('src', '');
+                    setTimeout(function() {
+                        gifElement.attr('src', originalSrc);
+                    }, 0);
+                }
+                
+                resetGif(); // Call this function on page load to reset the GIF animation
 
-            function loadFunction() {
-                loader.style.display = "none";
-            }
-            setTimeout(loadFunction, 2500); // Call this function after 2.5 seconds to hide the loader and reveal the site
-        });
+                function loadFunction() {
+                    loader.fadeOut(500); // Use fadeOut to smoothly hide the loader
+                    loader.style.display = "none";
+                }
+
+                setTimeout(loadFunction, 2500);
+            });
         </script>
     </body>
 </html>
