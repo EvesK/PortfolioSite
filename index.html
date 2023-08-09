@@ -7,21 +7,26 @@
             Evelyn Kessler
         </title>
     </head>
+
     <body>
         <div id="preloader">
             <img src="./Assets/logo.gif" alt="Loading..." id="loader-gif">
         </div>
-        
+
         <header>
             <nav>
                 <ul id="navbar">
-                    <li><img src="./Assets/portfoliologo.svg" alt="Site logo. The letters EK inside two offset outlined boxes"></li>
-                    <li id="spacer"></li>
+                    <li>
+                        <a href="index.html">
+                            <img src="./Assets/portfoliologo.svg" alt="Site logo. The letters EK inside two offset outlined boxes">
+                        </a>
+                    </li>                    <li id="spacer"></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#work">Work</a></li>
                 </ul>
             </nav>
         </header>
+
         <main>
             <section id="about">
                 <div class="about-column">
@@ -29,24 +34,13 @@
                 </div>
                 <div class="about-column">
                     <p>
-                        As a front end developer, I value usability and 
-                        accessibility above all else. When starting a new 
-                        project, I bring not just my coding skills and 
-                        hands-on experience with iOS app development but 
-                        also my extensive background in user experience 
-                        design and practical understanding of accessibility 
-                        practices. <br><br> I have been an integral member of 
-                        multiple successful development teams in the last 
-                        two years. Most recently, I led the front-end app 
-                        development of navishare, a navigation app for the 
-                        blind and visually impaired. Take a look at some of 
-                        my recent projects below.
+                        I am a front-end software developer and a senior at Olin College of Engineering, actively seeking an entry-level opportunity at an organization that is dedicated to driving meaningful change in the world. <br><br> As a designer and developer, I prioritize usability and accessibility above all else. When I join a team, I bring not only my hands-on experience in (iOS) app and web development, but also my comprehensive background in user experience design and a practical understanding of accessibility practices.
                     </p>
                 </div>
             </section>
 
             <section id="skills">
-                <div class="header-right">
+                <div>
                     <h2>skills</h2>
                     <p class="subtitle-sentence">
                         Here are some of the techniques and technologies I've 
@@ -57,7 +51,7 @@
                     <div class="skills-item">
                         <h3>Mobile and Web Development</h3>
                         <ul>
-                            <li>Swift (SwiftUI, SettingsManager, JSON Parsing)</li>
+                            <li>Swift (SwiftUI, User Defaults, JSON Parsing)</li>
                             <li>Git</li>
                             <li>HTML, CSS, JavaScript</li>
                         </ul>
@@ -82,9 +76,9 @@
                     <div class="skills-item">
                         <h3>Accessibility</h3>
                         <ul>
-                            <li>WCAG 2.0</li>
+                            <li>WCAG 2</li>
                             <li>Section 508</li>
-                            <li>Voiceover Accessibility</li>
+                            <li>Screen Reader Accessibility</li>
                             <li>HTML Containers and Alt Text</li>
                         </ul>
                     </div>
@@ -118,7 +112,7 @@
                             </ul>
                             <div class="work-links-right">
                                 <a href="https://github.com/OlinSTEP/STEPNavigationApp" target="_blank"><img src="./Assets/githubicon.svg" alt="github"></a>
-                                <!-- <a><img src="./Assets/videoicon.svg" alt="video"></a> -->
+                                <!-- <a href="" target="_blank"><img src="./Assets/videoicon.svg" alt="video"></a> -->
                             </div>
                         </div>
                     </div>
@@ -146,7 +140,7 @@
                             <div class="work-links-left">
                                 <a href="https://github.com/EvesK/health_tracking_app_2023", target="_blank"><img src="./Assets/githubicon.svg" alt="github"></a>
                                 <a href="https://www.figma.com/file/7BoTdNBSZPXCmjJiQidCqb/Dahlia?type=design&node-id=1%3A5296&mode=design&t=H4l1tA2NbXRg5P1z-1", target="_blank"><img src="./Assets/figmaicon.svg" alt="figma"></a>
-                                <!-- <a href="", target="_blank"><img src="./Assets/videoicon.svg" alt="video"></a> -->
+                                <!-- <a href="" target="_blank"><img src="./Assets/videoicon.svg" alt="video"></a> -->
                             </div>
                         </div>
                     </div>
@@ -178,24 +172,30 @@
                 </div>
             </section>
         </main>
+
         <footer id="footer">
             <h2>Coded From Scratch By Evelyn Kessler</h2>
             <ul>
                 <li><a href="mailto: evelyn.olin24@gmail.com">Email</a></li>
-                <li><a >Resume</a></li>
+                <li><a href="./Assets/Resume-EvelynKessler.pdf" target="_blank">Resume</a></li>
                 <li><a href="https://github.com/EvesK" target="_blank">Github</a></li>
                 <li><a href="https://www.linkedin.com/in/evelynkessler/" target="_blank">LinkedIn</a></li>
             </ul>
         </footer>
 
         <script>
-            var loader = document.getElementById("preloader");
-
             $(document).ready(function() {
                 var loader = $("#preloader");
                 var gifElement = $('#loader-gif');
                 var originalSrc = gifElement.attr('src');
-                
+
+                gifElement.on('click', function() {
+                    gifElement.attr('src', '');
+                    setTimeout(function() {
+                        gifElement.attr('src', originalSrc);
+                    }, 0);
+                });
+
                 function resetGif() {
                     gifElement.attr('src', '');
                     setTimeout(function() {
@@ -203,14 +203,23 @@
                     }, 0);
                 }
                 
-                resetGif(); // Call this function on page load to reset the GIF animation
+                resetGif();
 
                 function loadFunction() {
-                    loader.fadeOut(500); // Use fadeOut to smoothly hide the loader
+                    loader.fadeOut(500);
                     loader.style.display = "none";
                 }
 
-                setTimeout(loadFunction, 2500);
+                setTimeout(loadFunction, 2500);    
+                
+                $('#navbar a[href^="#"]').on('click', function(e) {
+                    e.preventDefault();
+
+                    var target = $(this.hash);
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 800); 
+                });
             });
         </script>
     </body>
