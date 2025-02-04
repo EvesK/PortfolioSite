@@ -90,20 +90,20 @@ h2 {
 
 #about {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-gap: 20px;
     padding: 60px 0;
 }
 
 .about-column h1 {
-    font-size: 6em;
+    font-size: 4em; /* for large screens only; see @media for smaller screen sizes*/
     font-weight: 400;
     margin: auto;
     color: #d9d9f7;
 }
 
 .about-column p {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 300;
     margin: auto;
 }
@@ -288,14 +288,6 @@ h2 {
 @media only screen and (max-width: 2000px) {
     .work-text-right p, .work-text-left p {
         font-size: 1em;
-    }
-
-    .about-column h1 {
-        font-size: 5em;
-    }
-    
-    .about-column p {
-        font-size: 1.5em;
     }
 
     .subtitle-sentence {
