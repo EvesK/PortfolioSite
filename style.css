@@ -10,12 +10,13 @@ body {
     padding: 0;
 }
 
-header, main, footer {
+main, footer {
     margin: 0 5%;
 }
 
 header {
-    margin-top: 2%;
+    background-color: #141414;
+    padding: 2% 5%;
 }
 
 footer {
@@ -96,7 +97,8 @@ h2 {
 /* About Section */
 
 #about {
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -356,11 +358,39 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     .skills-container {
         grid-template-columns: 1fr;
     }
     .work-item {
         flex-direction: column !important;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .about-main {
+        font-size: 1.3em;
+        margin-bottom: 45px;
+    }
+
+    .about-sub {
+        font-size: 1em;
+        margin-bottom: 45px;
+
+    }
+
+    .arrow-icon {
+        width: 20px;
+        height: 20px;
+        fill: #d9d9f7;
+        margin: 0 auto;
+        display: block;
+        animation: bounce 2s infinite;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .arrow-icon {
+        display: none;
     }
 }
