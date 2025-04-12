@@ -4,23 +4,49 @@
         <link rel="stylesheet" type="text/css" href="style.css" />
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <title>
-            Molly Kessler
+            Molly Kessler's Portfolio
         </title>
     </head>
 
     <body>
-        <div id="preloader">
+        <!-- <div id="preloader">
             <img src="./Assets/logo.gif" alt="Loading..." id="loader-gif">
-        </div>
+        </div> -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="icon-figma" viewBox="0 0 34 34">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 34C26.3888 34 34 26.3888 34 17C34 7.61116 26.3888 0 17 0C7.61116 0 0 7.61116 0 17C0 26.3888 7.61116 34 17 34ZM22.7857 13.4358C22.7292 13.4923 22.671 13.5471 22.6113 13.6C22.671 13.6529 22.7292 13.7077 22.7857 13.7643C23.1549 14.1334 23.4477 14.5716 23.6474 15.0538C23.8472 15.5361 23.95 16.053 23.95 16.575C23.95 17.097 23.8472 17.6139 23.6474 18.0962C23.4477 18.5784 23.1549 19.0166 22.7857 19.3857C22.4166 19.7549 21.9784 20.0477 21.4962 20.2474C21.0139 20.4472 20.497 20.55 19.975 20.55C19.453 20.55 18.9361 20.4472 18.4538 20.2474C18.2976 20.1827 18.1461 20.1083 18 20.0246V22.525C18 23.5792 17.5812 24.5903 16.8357 25.3358C16.0903 26.0812 15.0792 26.5 14.025 26.5C12.9708 26.5 11.9597 26.0812 11.2142 25.3358C10.4688 24.5903 10.05 23.5792 10.05 22.525C10.05 21.4708 10.4688 20.4597 11.2142 19.7143C11.2709 19.6576 11.3291 19.6028 11.3887 19.55C11.3291 19.4972 11.2709 19.4424 11.2142 19.3857C10.4688 18.6403 10.05 17.6292 10.05 16.575C10.05 15.5208 10.4688 14.5097 11.2142 13.7643C11.2709 13.7076 11.3291 13.6528 11.3887 13.6C11.3291 13.5472 11.2709 13.4924 11.2143 13.4358C10.4688 12.6903 10.05 11.6792 10.05 10.625C10.05 9.57077 10.4688 8.55971 11.2143 7.81425C11.9597 7.06879 12.9708 6.65 14.025 6.65H19.975C20.497 6.65 21.0139 6.75282 21.4962 6.95258C21.9784 7.15234 22.4166 7.44514 22.7857 7.81425C23.1549 8.18337 23.4477 8.62157 23.6474 9.10383C23.8472 9.5861 23.95 10.103 23.95 10.625C23.95 11.147 23.8472 11.6639 23.6474 12.1462C23.4477 12.6284 23.1549 13.0666 22.7857 13.4358ZM12.6285 9.22847C12.9988 8.85808 13.5012 8.65 14.025 8.65H16V12.6H14.025C13.5012 12.6 12.9988 12.3919 12.6285 12.0215C12.2581 11.6512 12.05 11.1488 12.05 10.625C12.05 10.1012 12.2581 9.59885 12.6285 9.22847ZM19.975 12.6H18V8.65H19.975C20.2344 8.65 20.4912 8.70109 20.7308 8.80034C20.9704 8.89959 21.1881 9.04507 21.3715 9.22847C21.5549 9.41186 21.7004 9.62958 21.7997 9.8692C21.8989 10.1088 21.95 10.3656 21.95 10.625C21.95 10.8844 21.8989 11.1412 21.7997 11.3808C21.7004 11.6204 21.5549 11.8381 21.3715 12.0215C21.1881 12.2049 20.9704 12.3504 20.7308 12.4497C20.4912 12.5489 20.2344 12.6 19.975 12.6ZM14.025 14.6H16L16 18.55H14.025C13.5012 18.55 12.9988 18.3419 12.6285 17.9715C12.2581 17.6012 12.05 17.0988 12.05 16.575C12.05 16.0512 12.2581 15.5489 12.6285 15.1785C12.9988 14.8081 13.5012 14.6 14.025 14.6ZM14.025 20.55H16V22.525C16 23.0488 15.7919 23.5512 15.4215 23.9215C15.0511 24.2919 14.5488 24.5 14.025 24.5C13.5012 24.5 12.9988 24.2919 12.6285 23.9215C12.2581 23.5512 12.05 23.0488 12.05 22.525C12.05 22.0012 12.2581 21.4988 12.6285 21.1285C12.9988 20.7581 13.5012 20.55 14.025 20.55ZM18.1503 17.3308C18.0514 17.0919 18.0003 16.8359 18 16.5774L18 16.575L18 16.5726C18.0003 16.3141 18.0514 16.0581 18.1503 15.8192C18.2496 15.5796 18.3951 15.3619 18.5785 15.1785C18.7619 14.9951 18.9796 14.8496 19.2192 14.7503C19.4588 14.6511 19.7156 14.6 19.975 14.6C20.2344 14.6 20.4912 14.6511 20.7308 14.7503C20.9704 14.8496 21.1881 14.9951 21.3715 15.1785C21.5549 15.3619 21.7004 15.5796 21.7997 15.8192C21.8989 16.0588 21.95 16.3156 21.95 16.575C21.95 16.8344 21.8989 17.0912 21.7997 17.3308C21.7004 17.5704 21.5549 17.7881 21.3715 17.9715C21.1881 18.1549 20.9704 18.3004 20.7308 18.3997C20.4912 18.4989 20.2344 18.55 19.975 18.55C19.7156 18.55 19.4588 18.4989 19.2192 18.3997C18.9796 18.3004 18.7619 18.1549 18.5785 17.9715C18.3951 17.7881 18.2496 17.5704 18.1503 17.3308Z" fill="currentColor"/>
+            </symbol>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="icon-github" viewBox="0 0 34 34">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 34C26.3888 34 34 26.3888 34 17C34 7.61116 26.3888 0 17 0C7.61116 0 0 7.61116 0 17C0 26.3888 7.61116 34 17 34ZM9.3204 7.34218C9.45222 6.95448 9.81626 6.69375 10.2258 6.69375C11.8419 6.69375 13.2655 7.57519 14.0268 8.13658C14.5758 7.97172 15.554 7.72405 16.9227 7.72405C18.2915 7.72405 19.2696 7.97172 19.8186 8.13658C20.5799 7.57519 22.0035 6.69375 23.6197 6.69375C24.0292 6.69375 24.3932 6.95448 24.525 7.34218C24.8803 8.38712 24.8975 9.60915 24.6667 10.574C25.3783 11.6909 25.6062 12.8504 25.6062 14.347C25.6062 16.729 25.084 18.4857 23.745 19.6934C22.8742 20.4789 21.9492 20.9785 20.8985 21.2545C20.929 21.4132 20.9474 21.5629 20.9595 21.6949C20.9976 22.112 20.9836 22.5865 20.9748 22.8846C20.9721 22.9774 20.9699 23.053 20.9699 23.1045V26.1948C20.9699 26.7229 20.5418 27.1517 20.0136 27.1517C19.4855 27.1517 19.0574 26.7236 19.0574 26.1954V23.1045C19.0574 22.9613 19.0615 22.8256 19.0656 22.6921C19.0738 22.4229 19.0818 22.1628 19.0549 21.8689C19.0138 21.4185 18.9093 21.2825 18.8874 21.2643C18.5901 21.0173 18.4707 20.6155 18.5849 20.2462C18.6992 19.8769 19.0245 19.6127 19.4094 19.5767C20.6526 19.4604 21.5777 19.0727 22.4641 18.2733C23.2269 17.5853 23.6937 16.4777 23.6937 14.347C23.6937 12.935 23.4655 12.129 22.8547 11.3147C22.6595 11.0544 22.61 10.7126 22.7234 10.4077C22.881 9.98381 22.9518 9.33831 22.8779 8.70373C21.9199 8.94568 21.0575 9.57994 20.6161 9.93804C20.381 10.1288 20.0694 10.1969 19.7761 10.1217C19.6826 10.0977 19.5783 10.0655 19.4603 10.029C18.9531 9.87221 18.191 9.63655 16.9227 9.63655C15.6545 9.63655 14.8923 9.87221 14.3851 10.029C14.2671 10.0655 14.1629 10.0977 14.0693 10.1217C13.776 10.1969 13.4645 10.1288 13.2293 9.93804C12.788 9.57993 11.9255 8.94568 10.9676 8.70373C10.8936 9.33831 10.9645 9.98381 11.1221 10.4077C11.2355 10.7126 11.186 11.0544 10.9908 11.3147C10.38 12.129 10.1517 12.935 10.1517 14.347C10.1517 16.4777 10.6186 17.5853 11.3814 18.2733C12.2677 19.0727 13.1928 19.4604 14.436 19.5767C14.8209 19.6127 15.1463 19.8769 15.2605 20.2462C15.3747 20.6155 15.2554 21.0173 14.958 21.2643C14.9361 21.2825 14.8317 21.4185 14.7905 21.8689C14.7637 22.1628 14.7716 22.4229 14.7798 22.6921C14.7839 22.8256 14.7881 22.9613 14.7881 23.1045V24.1327L14.7881 24.1349L14.7881 24.137V26.1948C14.7881 26.7229 14.3599 27.1517 13.8318 27.1517C13.3037 27.1517 12.8756 26.7236 12.8756 26.1954V25.0232C11.5436 24.8374 10.2925 24.2936 9.4606 23.677L9.45624 23.6738C8.97572 23.3134 8.625 22.8412 8.36311 22.4886C8.31513 22.424 8.27013 22.3634 8.22786 22.3082C7.93037 21.9201 7.65136 21.613 7.20036 21.3727C6.73426 21.1244 6.55773 20.5452 6.80606 20.0792C7.05439 19.6131 7.63355 19.4365 8.09964 19.6849C8.90561 20.1143 9.38388 20.6726 9.74578 21.1448C9.81884 21.2401 9.88432 21.3271 9.9445 21.4071C10.2018 21.7491 10.362 21.9619 10.6016 22.1422C11.1371 22.5384 11.9756 22.9164 12.8755 23.0857C12.875 23.0353 12.873 22.9666 12.8706 22.8846C12.8618 22.5865 12.8479 22.1119 12.886 21.6949C12.898 21.5629 12.9164 21.4132 12.9469 21.2545C11.8962 20.9785 10.9713 20.4789 10.1004 19.6934C8.7614 18.4857 8.2392 16.729 8.2392 14.347C8.2392 12.8504 8.46714 11.6909 9.17873 10.574C8.94792 9.60914 8.96513 8.38712 9.3204 7.34218Z" fill="currentColor"/>
+            </symbol>
+        </svg> 
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="icon-image" viewBox="0 0 34 34">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M34 17C34 26.3888 26.3888 34 17 34C7.61116 34 0 26.3888 0 17C0 7.61116 7.61116 0 17 0C26.3888 0 34 7.61116 34 17ZM15.4214 15.7292C15.3259 15.5764 15.1931 15.4504 15.0355 15.3631C14.8778 15.2757 14.7006 15.2299 14.5204 15.2299C14.3402 15.2299 14.1629 15.2757 14.0053 15.3631C13.8477 15.4504 13.7149 15.5764 13.6194 15.7292L10.0777 21.3959C9.97739 21.5567 9.9219 21.7415 9.91702 21.931C9.91214 22.1205 9.95804 22.3078 10.05 22.4736C10.1419 22.6393 10.2765 22.7775 10.4398 22.8737C10.6031 22.97 10.7892 23.0208 10.9787 23.0208H22.3121C22.5094 23.0208 22.7028 22.9659 22.8707 22.8622C23.0385 22.7584 23.1741 22.61 23.2624 22.4335C23.3506 22.257 23.388 22.0594 23.3703 21.8629C23.3525 21.6664 23.2805 21.4787 23.1621 21.3208L21.0371 18.4875C20.9381 18.3555 20.8098 18.2484 20.6622 18.1747C20.5147 18.1009 20.352 18.0625 20.1871 18.0625C20.0221 18.0625 19.8594 18.1009 19.7119 18.1747C19.5644 18.2484 19.436 18.3555 19.3371 18.4875L18.1414 20.0812L15.4214 15.7292ZM18.6845 11.9557C18.2859 12.3542 18.0621 12.8947 18.0621 13.4583C18.0621 14.0219 18.2859 14.5624 18.6845 14.9609C19.083 15.3594 19.6235 15.5833 20.1871 15.5833C20.7506 15.5833 21.2911 15.3594 21.6897 14.9609C22.0882 14.5624 22.3121 14.0219 22.3121 13.4583C22.3121 12.8947 22.0882 12.3542 21.6897 11.9557C21.2911 11.5572 20.7506 11.3333 20.1871 11.3333C19.6235 11.3333 19.083 11.5572 18.6845 11.9557Z" fill="currentColor"/>
+            </symbol>
+        </svg>  
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="icon-link" viewBox="0 0 34 34">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M34 17C34 26.3888 26.3888 34 17 34C7.61116 34 0 26.3888 0 17C0 7.61116 7.61116 0 17 0C26.3888 0 34 7.61116 34 17ZM11.2625 10.2C10.4735 10.2 9.71678 10.5134 9.15886 11.0714C8.60094 11.6293 8.2875 12.386 8.2875 13.175V22.7375C8.2875 23.5265 8.60094 24.2832 9.15886 24.8411C9.71678 25.3991 10.4735 25.7125 11.2625 25.7125H20.825C21.614 25.7125 22.3707 25.3991 22.9286 24.8411C23.4866 24.2832 23.8 23.5265 23.8 22.7375V17C23.8 16.4132 23.3243 15.9375 22.7375 15.9375C22.1507 15.9375 21.675 16.4132 21.675 17V22.7375C21.675 22.9629 21.5854 23.1791 21.426 23.3385C21.2666 23.4979 21.0504 23.5875 20.825 23.5875H11.2625C11.0371 23.5875 10.8209 23.4979 10.6615 23.3385C10.5021 23.1791 10.4125 22.9629 10.4125 22.7375V13.175C10.4125 12.9496 10.5021 12.7334 10.6615 12.574C10.8209 12.4146 11.0371 12.325 11.2625 12.325H17C17.5868 12.325 18.0625 11.8493 18.0625 11.2625C18.0625 10.6757 17.5868 10.2 17 10.2H11.2625ZM19.8688 10.4125C19.2819 10.4125 18.8063 9.9368 18.8063 9.35C18.8063 8.7632 19.2819 8.2875 19.8688 8.2875H24.65C25.2368 8.2875 25.7125 8.7632 25.7125 9.35V14.1313C25.7125 14.7181 25.2368 15.1938 24.65 15.1938C24.0632 15.1938 23.5875 14.7181 23.5875 14.1313V11.9151L16.7951 18.7076C16.3801 19.1225 15.7074 19.1225 15.2924 18.7076C14.8775 18.2926 14.8775 17.6199 15.2924 17.2049L22.0849 10.4125H19.8688Z" fill="currentColor"/>
+            </symbol>
+        </svg>  
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="icon-video" viewBox="0 0 34 34">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M34 17C34 26.3888 26.3888 34 17 34C7.61116 34 0 26.3888 0 17C0 7.61116 7.61116 0 17 0C26.3888 0 34 7.61116 34 17ZM15.5847 7.6501H9.9875C9.36756 7.6501 8.773 7.89637 8.33464 8.33473C7.89627 8.7731 7.65 9.36765 7.65 9.98759V24.0125C7.65 24.6325 7.89627 25.227 8.33464 25.6654C8.773 26.1037 9.36756 26.35 9.9875 26.35H24.0125C24.6324 26.35 25.227 26.1037 25.6654 25.6654C26.1037 25.227 26.35 24.6325 26.35 24.0125V9.98759C26.35 9.36765 26.1037 8.7731 25.6654 8.33473C25.227 7.89637 24.6324 7.6501 24.0125 7.6501H21.222C21.2129 7.64997 21.2038 7.64997 21.1947 7.6501H15.612L15.6009 7.65L15.5847 7.6501ZM19.4604 9.52009H16.0979L14.5396 11.8576H17.9021L19.4604 9.52009ZM21.7079 9.52009L20.1496 11.8576H24.48V9.98759C24.48 9.8636 24.4307 9.74469 24.3431 9.65702C24.2554 9.56934 24.1365 9.52009 24.0125 9.52009H21.7079ZM24.48 13.7276H18.4153C18.4118 13.7276 18.4083 13.7277 18.4048 13.7277C18.3992 13.7277 18.3936 13.7276 18.388 13.7276H12.8053C12.7962 13.7277 12.7871 13.7277 12.778 13.7276H9.52V24.0125C9.52 24.1365 9.56925 24.2554 9.65693 24.3431C9.7446 24.4308 9.86351 24.48 9.9875 24.48H24.0125C24.1365 24.48 24.2554 24.4308 24.3431 24.3431C24.4307 24.2554 24.48 24.1365 24.48 24.0125V13.7276ZM9.52 11.8576H12.2921L13.8504 9.52009H9.9875C9.86351 9.52009 9.7446 9.56934 9.65693 9.65702C9.56925 9.74469 9.52 9.8636 9.52 9.98759V11.8576ZM14.8962 15.2263C15.1855 15.0593 15.542 15.0593 15.8312 15.2263L20.74 18.0603C21.0293 18.2273 21.2075 18.536 21.2075 18.87C21.2075 19.2041 21.0293 19.5128 20.74 19.6798L15.8312 22.5137C15.542 22.6808 15.1855 22.6808 14.8962 22.5137C14.607 22.3467 14.4288 22.0381 14.4288 21.704V16.0361C14.4288 15.702 14.607 15.3934 14.8962 15.2263ZM18.4025 18.87L16.2988 20.0846V17.6555L18.4025 18.87Z" fill="currentColor"/>
+            </symbol>
+        </svg>            
 
         <header>
             <nav>
                 <ul id="navbar">
                     <li>
                         <a href="index.html">
-                            <img src="./Assets/portfoliologo.svg" alt="Site logo. The letters MK inside two offset outlined boxes">
+                            <img src="./Assets/logo.svg" alt="Site logo. The letters MK inside two offset outlined boxes">
                         </a>
-                    </li>                    <li id="spacer"></li>
+                    </li>        
+                    <li id="spacer"></li>            
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#work">Work</a></li>
                 </ul>
@@ -29,14 +55,19 @@
 
         <main>
             <section id="about">
-                <div class="about-column">
-                    <h1>Hi! I'm Molly Kessler.</h1>
+                <div class="about-intro">
+                    <h1 class="about-main">Software engineer building accessible, user-centered applications and visualizations. Experienced in Python, Swift, and C, with a track record of leading small dev teams and collaborating directly with end users.</h1>
+                    <p class="about-sub">I'm Molly Kessler - scroll down to see how I bring ideas to life.</p>
+                    <a href="#skills" class="down-arrow">
+                        <?xml version="1.0" encoding="iso-8859-1"?>
+                        <svg class="arrow-icon" fill="#000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                             viewBox="0 0 330 330" xml:space="preserve">
+                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+                            c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+                            s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"/>
+                        </svg>
+                    </a>                
                 </div>
-                <div class="about-column">
-                    <p>
-                        I'm a recent graduate of Olin College of Engineering, where I led software development teams on projects ranging from rehauling an AR-based indoor navigation app for the blind to designing data science driven clinical trial management tools for Pfizer's Global Clinical Supply Team. 
-                        Now, I'm ready to build intuitive and accessible solutions with a team commited to usability, maintainability, and sustainability!
-                    </div>
             </section>
 
             <section id="skills">
@@ -46,58 +77,46 @@
                 <div class="skills-container">
                     <div class="skills-item">
                         <h3>Programming Languages</h3>
-                        <ul>
-                            <li>Swift (SwiftUI)</li>
-                            <li>Python</li>
-                            <li>C</li>
-                            <li>Kotlin</li>
-                            <li>R</li>
-                            <li>Haskell</li>
-                            <li>MATLAB</li>
-                            <li>HTML/CSS (Flexbox)</li>
-
-                        </ul>
+                        <div class="skills-tag-group">
+                            <span class="skill-tag">Python (matplotlib, Pandas, PyGame)</span>
+                            <span class="skill-tag">Swift (SwiftUI)</span>
+                            <span class="skill-tag">C (CMake, SDL, Criterion)</span>
+                            <span class="skill-tag">Kotlin (JUnit)</span>
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">Haskell</span>
+                            <span class="skill-tag">MATLAB</span>
+                            <span class="skill-tag">HTML & CSS (Flexbox)</span>
+                            <span class="skill-tag">Git</span>
+                            <!-- <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">SQL</span> -->
+                          </div>
                     </div>
                     <div class="skills-item">
                         <h3>Software Development Practices</h3>
-                        <ul>
-                            <li>Agile Methodologies (Scrum, Kanban, Lean)</li>
-                            <li>Continuous Integration/Continuous Deployment</li>
-                            <li>Code Refactoring into Reusable Components (Modularizing Code)</li>
-                            <li>Feature Driven Development</li>
-                            <li>Test Driven Development</li>
-                            <li>Pair Programming</li>
-                        </ul>
+                        <div class="skills-tag-group">
+                            <span class="skill-tag">Agile Methodologies (Scrum, Kanban, Lean)</span>
+                            <span class="skill-tag">Feature Driven Development</span>
+                            <span class="skill-tag">Pair Programming</span>
+                            <span class="skill-tag">Test Driven Development</span>
+                            <span class="skill-tag">Algorithm Optimization</span>
+                            <span class="skill-tag">Model-View Frameworks</span>
+                            <span class="skill-tag">Automated Unit Testing</span>
+                        </div>
                     </div>
                     <div class="skills-item">
-                        <h3>User Experience and Interface Design</h3>
-                        <ul>
-                            <li>User Testing</li>
-                            <li>Usability Heuristics</li>
-                            <li>Information Architecture</li>
-                            <li>Accessible Design (WCAG 2, Section 508, Screen Readers)</li>
-                            <li>Wireframes, Storyboards, and Models</li>
-                            <li>Interviewing and CoDesign</li>
-                            <li>Figma</li>
-                            <li>Adobe Illustrator</li>
-                        </ul>
-                    </div>
-                    <div class="skills-item">
-                        <h3>Testing and Documentation</h3>
-                        <ul>
-                            <li>Automated Unit Testing (JUnit, Criterion)</li>
-                            <li>Debugging (GDB)</li>
-                            <li>Technical Documentation</li>
-                            <li>User Manuals</li>
-                        </ul>
-                    </div>
-                    <div class="skills-item">
-                        <h3>Programming Paradigms</h3>
-                        <ul>
-                            <li>Algorithm Optimization</li>
-                            <li>Model-View Frameworks (MVVM, MVC)</li>
-                            <li>Object Oriented, Procedural, Functional, and Declarative Programming</li>
-                        </ul>
+                        <h3>User Experience and Visualization</h3>
+                        <div class="skills-tag-group">
+                            <span class="skill-tag">User Testing</span>
+                            <span class="skill-tag">Usability Heuristics</span>
+                            <span class="skill-tag">User Interviews</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Information Architecture</span>
+                            <span class="skill-tag">Wireframing</span>
+                            <span class="skill-tag">Accessibility (WCAG 2, Section 508)</span>
+                            <span class="skill-tag">Data Visualization</span>
+                          </div>
                     </div>
                 </div>
             </section>
@@ -105,318 +124,356 @@
             <section id="work">
                 <h2>work</h2>
                 <div class="work-container">
-                    <div class="work-item-right">
-                        <div class="work-image-right">
-                            <img src="./Assets/navishareBanner.png" alt="black and white app screens">
+                    <div class="work-item">
+                        <div class="work-image">
+                            <img src="./Assets/banners/esbbanner.png" alt="stacked bar chart">
                         </div>
-                        <div class="work-text-right">
-                            <h3>Clew</h3>
-                            <h4>Precise, short distance navigation for the blind and visually impaired.</h4>
+                        <div class="work-text">
+                            <div class="work-header">
+                                <h3>Analysis and Visualization of State Legislative Funding</h3>
+                                <div class="work-links">
+                                    <a href="https://github.com/EvesK/ESB" target="_blank" rel="noopener noreferrer">
+                                      <svg class="work-icon" width="32" height="32">
+                                        <use href="#icon-github" />
+                                      </svg>
+                                    </a>
+                                </div>
+                            </div>
                             <p>
-                                Clew uses ARKit and Google Cloud Anchors to create crowdsourced indoor routes, 
-                                making spaces accessible to blind and visually impaired users. As a team member in the spring, I 
-                                redesigned the app's front-end to improve usability and accessibility, focusing on an intuitive, 
-                                low-vision-friendly interface and 100% screen reader accessibility. I also redesigned the codebase 
-                                for better performance and modularity using the MVVM framework.
-                                As front-end development lead in the summer, I led the front-end integration of cloud anchors and developed new flows 
-                                for recording and connecting anchors, choosing a route, and following the route to support the new feature.
-                                I also designed and developed a non-visual 'map' feature to accompany the step-by-step navigation. 
-                                I mentored junior members on code maintainability, pair programming, and Git workflows, and together we implemented 10+ 
-                                builds following continuous integration and feature-driven development practices.
+                                I conducted exploratory data analysis which revealed the extent of funding disparities faced by state legislative candidates in rural districts. I sourced, cleaned, combined, and validated datasets using Python (Pandas, GeoPandas), and created accessible visualizations with Matplotlib and Seaborn to communicate trends including heat map geographical maps, pie/donut charts, and histograms. I designed summary tables and graphs and calculated statistics to support storytelling across the organization&#39;s website, presentations, and social media, helping to communicate complex political data succinctly.
                             </p>
-                            <ul>
-                                <li>Voiceover Accessibility</li>
-                                <li>Figma</li>
-                                <li>User Experience and User Interface</li>
-                                <li>Modular Components</li>
-                                <li>Code Base Management (Git)</li>
-                                <li>Swift (SwiftUI)</li>
-                            </ul>
-                            <div class="work-links-right">
-                                <a href="https://github.com/OlinSTEP/STEPNavigationApp" target="_blank"><img src="./Assets/githubicon.svg" alt="github"></a>
-                                <a href="https://youtu.be/l3IcrqrYF5E" target="_blank"><img src="./Assets/videoicon.svg" alt="video"></a> 
+                            <div class="work-tags">
+                                <span class="skill-tag" skill="python">Python (matplotlib, Seaborn, Pandas, GeoPandas)</span>
+                                <span class="skill-tag" skill="data-visualization">Data Visualization</span>
                             </div>
                         </div>
                     </div>
-                    <div class="work-item-left">
-                        <div class="work-image-left">
-                            <img src="./Assets/dahliabanner.png" alt="colorful app screens">
+                    <div class="work-item">
+                        <div class="work-image">
+                            <img src="./Assets/banners/clewbanner.png" alt="black and white app screens">
                         </div>
-                        <div class="work-text-left">
-                            <h3>Find and Replace Program</h3>
-                            <h4>Text search and replace run on the command line.</h4>
+                        <div class="work-text">
+                            <div class="work-header">
+                                <h3>Clew iOS App</h3>
+                                <div class="work-links">
+                                    <a href="https://github.com/OlinSTEP/STEPNavigationApp" target="_blank" rel="noopener noreferrer">
+                                      <svg class="work-icon" width="32" height="32">
+                                        <use href="#icon-github" />
+                                      </svg>
+                                    </a>
+                                    <a href="https://youtu.be/l3IcrqrYF5E" target="_blank" rel="noopener noreferrer">
+                                        <svg class="work-icon" width="32" height="32">
+                                          <use href="#icon-video" />
+                                        </svg>
+                                      </a>
+                                  </div>
+                            </div>
                             <p>
-                                A word search and replace program using the Knuth-Morris-Pratt (KMP) string 
-                                search algorithm, which efficiently finds phrases in a large body of text by preprocessing the 
-                                search term to skip unnecessary character comparisons. I utilized a test driven development approach to design a replace program
-                                that can handle complex queries, such as the replacement phrase containing the original phrase (e.g., replacing 
-                                'the' with 'there'). I designed the program to sequentially find and replace 
-                                each instance of the search term without the need to store any locations 
-                                or copies of the text, which optimizes the runtime and has low memory needs. My implementation includes 
-                                commands for case-insensitive searches and whole word matching, allowing 
-                                for precise and flexible text processing.
+                                As lead front-end developer for CLEW, a blind and low-vision indoor navigation app, I directed a full UI/UX overhaul with a focus on low vision accessibility, and re-architected the codebase using the MVVM framework and reusable, single-responsibility components to improve scalability and decouple front- and back-end logic. In 6 months, my team deployed 10+ builds to the App Store for user testing in a continuous development process and conducted over a dozen user interviews as part of our human-centered design process. I mentored three junior developers in iOS development (Swift, SwiftUI), Git workflows, and accessible design practices, fostering a collaborative and inclusive dev culture.
                             </p>
-                            <ul>
-                                <li>Kotlin</li>
-                                <li>String Search</li>
-                                <li>Test Driven Development</li>
-                            </ul>
-                            <div class="work-links-left">
-                                <a href="", target="_blank"><img src="./Assets/githubicon.svg" alt="github"></a>
-                                <a href="" target="_blank"><img src="./Assets/videoicon.svg" alt="video"></a> 
+                            <div class="work-tags">
+                                <span class="skill-tag" skill="swift">Swift (SwiftUI)</span>
+                                <span class="skill-tag" skill="Git">Git</span>
+                                <span class="skill-tag" skill="feature-driven-development">Feature Driven Development</span>
+                                <span class="skill-tag" skill="user-testing">User Testing</span>
+                                <span class="skill-tag" skill="accessiblity">Accessiblity (WCAG 2)</span>
+                                <span class="skill-tag" skill="agile-methodologies">Agile Methodologies (Scrum, Lean)</span>
+                                <span class="skill-tag" skill="user-interviews">User Interviews</span>
+                                <span class="skill-tag" skill="information-architecture">Information Architecture</span>
+                                <span class="skill-tag" skill="figma">Figma</span>
                             </div>
                         </div>
                     </div>
-                    <div class="work-item-left">
-                        <div class="work-image-left">
-                            <img src="./Assets/dahliabanner.png" alt="colorful app screens">
+                    <div class="work-item">
+                        <div class="work-image">
+                            <img src="./Assets/pfizerposter.pdf" alt="Redesigning Complexity Evaluation for Pfizer Global Clinical Supply (GCS). Olin College SCOPE Summit. May 8, 2024">
                         </div>
-                        <div class="work-text-left">
-                            <h3>Clinical Trial Management Tools: Pfizer Student Consultant</h3>
-                            <h4>Subtitle here.</h4>
+                        <div class="work-text">
+                            <div class="work-header">
+                                <h3>Clinical Trial Complexity Analysis for Pfizer</h3>
+                                <div class="work-links">
+                                    <a href="./Assets/pfizerposter.pdf" target="_blank" rel="noopener noreferrer">
+                                      <svg class="work-icon" width="32" height="32">
+                                        <use href="#icon-image" />
+                                      </svg>
+                                    </a>
+                                    <a href="https://www.olin.edu/events/scope-summit-2024" target="_blank" rel="noopener noreferrer">
+                                        <svg class="work-icon" width="32" height="32">
+                                          <use href="#icon-link" />
+                                        </svg>
+                                      </a>
+                                  </div>
+                            </div>
                             <p>
-                                Paragraph here.
+                                I co-led a project consulting for Pfizer&#39;s Global Clinical Supply (GCS) team to develop a tool for quantifying clinical trial operational complexity. My team of five designed a backend evaluation engine in Python and a manager-facing dashboard in Spotfire to communicate results with tables and graphs. We addressed data sparsity and inconsistency by implementing logic to standardize evaluation despite significant missing fields and variable data coverage. I led project planning, coordinated deliverables, and facilitated communication between our team, our advisors, and the Pfizer stakeholders.
                             </p>
-                            <ul>
-                                <li>Kotlin</li>
-                                <li>String Search</li>
-                                <li>Test Driven Development</li>
-                            </ul>
-                            <div class="work-links-left">
-                                <a href="", target="_blank"><img src="./Assets/githubicon.svg" alt="github"></a>
-                                <a href="" target="_blank"><img src="./Assets/videoicon.svg" alt="video"></a> 
+                            <div class="work-tags">
+                                <span class="skill-tag" skill="python">Python (matplotlib, Pandas, scikit-learn)</span>
+                                <span class="skill-tag" skill="feature-driven-development">Feature Driven Development</span>
+                                <span class="skill-tag" skill="algorithm-optimization">Algorithm Optimization</span>
+                                <span class="skill-tag" skill="data-visualization">Data Visualization</span>
+                                <span class="skill-tag" skill="user-interviews">User Interviews</span>
                             </div>
                         </div>
                     </div>
-                    <div class="work-item-left">
-                        <div class="work-image-left">
-                            <img src="./Assets/dahliabanner.png" alt="">
+                    <div class="work-item">
+                        <div class="work-image">
+                            <img src="./Assets/banners/chronicillnessbanner.png" alt="colorful app screens">
                         </div>
-                        <div class="work-text-left">
-                            <h3>Flappy Bird</h3>
-                            <h4>Recreating videogames from scratch.</h4>
+                        <div class="work-text">
+                            <div class="work-header">
+                                <h3>Chronic Illness Management App</h3>
+                                <div class="work-links">
+                                    <a href="https://www.figma.com/file/7BoTdNBSZPXCmjJiQidCqb/Dahlia?type=design&node-id=1%3A5296&mode=design&t=H4l1tA2NbXRg5P1z-1" target="_blank" rel="noopener noreferrer">
+                                      <svg class="work-icon" width="32" height="32">
+                                        <use href="#icon-figma" />
+                                      </svg>
+                                    </a>
+                                    <a href="https://youtu.be/OSe24RNydJA" target="_blank" rel="noopener noreferrer">
+                                        <svg class="work-icon" width="32" height="32">
+                                          <use href="#icon-video" />
+                                        </svg>
+                                      </a>
+                                      <a href="https://github.com/EvesK/health_tracking_app_2023" target="_blank" rel="noopener noreferrer">
+                                        <svg class="work-icon" width="32" height="32">
+                                          <use href="#icon-github" />
+                                        </svg>
+                                      </a>
+                                  </div>
+                            </div>
                             <p>
-                                Created a simplified 'Flappy Bird' game in C with my team of three, utilizing the SDL 
-                                libraries for graphics and the Model-View-Controller (MVC) framework 
-                                to structure the game's architecture. We implemented automated unit 
-                                tests using the Criterion testing framework and wrote the compiler 
-                                code using CMake. Thorough function documentation ensured that our code
-                                was easy to understand and build on.
+                                I developed a prototype of a chronic illness management app in Figma and Swift (SwiftUI). I conducted user research to identify major issues user's had with competitor apps which informed the design of a highly-customizable application with an aesthetic, modern interface. I implemented parts of the introduction sequence, calendar tab, and settings section in Swift and prototyped the rest of the app in Figma.
                             </p>
-                            <ul>
-                                <li>Automated Unit Testing</li>
-                                <li>Game Development</li>
-                                <li>Pair Programming</li>
-                                <li>C</li>
-                            </ul>
-                            <div class="work-links-left">
-                                <a href="", target="_blank"><img src="./Assets/githubicon.svg" alt="github"></a>
-                                <a href="" target="_blank"><img src="./Assets/videoicon.svg" alt="video"></a> 
+                            <div class="work-tags">
+                                <span class="skill-tag" skill="figma">Swift (SwiftUI)</span>
+                                <span class="skill-tag" skill="figma">Figma</span>
+                                <span class="skill-tag" skill="wireframing">Wireframing</span>
+                                <span class="skill-tag" skill="usability-heuristics">Usability Heuristics</span>
                             </div>
                         </div>
                     </div>
-                    <div class="work-item-left">
-                        <div class="work-image-left">
-                            <img src="./Assets/dahliabanner.png" alt="colorful app screens">
+                    <div class="work-item">
+                        <div class="work-image">
+                            <img src="./Assets/banners/kmeansbanner.png" alt="scatter plot with groups colored">
                         </div>
-                        <div class="work-text-left">
-                            <h3>Graph Coloring Algorithms Demo</h3>
-                            <h4>Computational essay comparing graph coloring algorithms' time complexity for different types of graphs.</h4>
+                        <div class="work-text">
+                            <div class="work-header">
+                                <h3>K-Means Clustering Demo Interface</h3>
+                                <div class="work-links">
+                                    <a href="https://github.com/EvesK/DSA/tree/main/FinalProject" target="_blank" rel="noopener noreferrer">
+                                      <svg class="work-icon" width="32" height="32">
+                                        <use href="#icon-github" />
+                                      </svg>
+                                    </a>
+                                    <a href="https://drive.google.com/file/u/1/d/1vxihs6FtVWot18Zz-al-8z8JZCNOa3Kx/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                        <svg class="work-icon" width="32" height="32">
+                                          <use href="#icon-video" />
+                                        </svg>
+                                      </a>
+                                  </div>
+                            </div>
                             <p>
-                                Working with a team of three, I developed a visual comparison demo of brute force, greedy, 
-                                Welsh Powell, and DSatur algorithms, highlighting the runtimes for 
-                                different types of graphs. My individual contribution included a versatile random 
-                                graph generator capable of creating graphs of different sizes and 
-                                varying levels of connectivity, along with a graph display system 
-                                with automated intuitive colorings. I also implemented the 
-                                brute force and greedy algorithms, and wrote documentation for teammates' code.                    
+                                I developed a graphical user interface (GUI) visualization of the k-means clustering algorithm for unlabeled dataset partitioning, a form of unsupervised machine learning, complete with customizable example graph generation. Using the interface, I conducted a comparative analysis of traditional k-means versus PCA-informed centroid selection (k-means++) based on the paper &quot;An Improved K-means Clustering Algorithm Towards an Efficient Data-Driven Modeling&quot;, highlighting gains in consistency and cluster accuracy.
                             </p>
-                            <ul>
-                                <li>Python</li>
-                                <li>Algorithm Optimization</li>
-                                <li>Computational Essay</li>
-                            </ul>
-                            <div class="work-links-left">
-                                <a href="", target="_blank"><img src="./Assets/githubicon.svg" alt="github"></a>
+                            <div class="work-tags">
+                                <span class="skill-tag" skill="kotlin">Kotlin (JUnit)</span>
                             </div>
                         </div>
                     </div>
-                    <div class="work-item-left">
-                        <div class="work-image-left">
-                            <img src="./Assets/dahliabanner.png" alt="colorful app screens">
-                        </div>
-                        <div class="work-text-left">
-                            <h3>CYK Algorithm</h3>
-                            <h4>Parsing context-free grammars.</h4>
+                    <div class="work-item text-only">
+                        <div class="work-text">
+                            <div class="work-header">
+                                <h3>Coding my Portfolio Website</h3>
+                                <div class="work-links">
+                                    <a href="https://github.com/EvesK/PortfolioSite" target="_blank" rel="noopener noreferrer">
+                                        <svg class="work-icon" width="32" height="32">
+                                          <use href="#icon-github" />
+                                        </svg>
+                                      </a>
+                                </div>
+                            </div>
                             <p>
-                                An implementation of CYK parsing for context-free grammars, 
-                                an algorithm that determines whether a given string is in 
-                                the language of a grammar. This fascinating algorithm is foundational 
-                                for natural language processing, as it enables computers to 
-                                understand and process the structure of human languages by 
-                                efficiently analyzing and interpreting grammatical constructs.
-                                My partner and I implemented the algorithm in Haskell,
-                                including a step-by-step command line print out used to demonstrate the inner
-                                workings to a class of 20 students.
+                                I designed and coded this portfolio website from scratch in HTML, CSS (Flexbox), and JavaScript. I implemented a responsive layout and a high contrast color scheme to create a clean, accessible experience across devices.
                             </p>
-                            <ul>
-                                <li>Haskell</li>
-                                <li>Pair Programming</li>
-                                <li>Functional Programming</li>
-                                <li>String Parsing</li>
-                                <li>Context Free Grammars</li>
-                            </ul>
-                            <div class="work-links-left">
-                                <a href="", target="_blank"><img src="./Assets/githubicon.svg" alt="github"></a>
+                            <div class="work-tags">
+                                <span class="skill-tag" skill="html-css">HTML & CSS (Flexbox)</span>
                             </div>
                         </div>
                     </div>
-                    <div class="work-item-left">
-                        <div class="work-image-left">
-                            <img src="./Assets/dahliabanner.png" alt="colorful app screens">
-                        </div>
-                        <div class="work-text-left">
-                            <h3>K-Means Algorithm Demo</h3>
-                            <h4>Customizable demo of k-means clustering for non-labelled dataset partitioning.</h4>
+                    <div class="work-item text-only">
+                        <div class="work-text">
+                            <div class="work-header">
+                                <h3>Flappy Bird</h3>
+                                <div class="work-links">
+                                    <a href="https://github.com/olincollege/flappybird" target="_blank" rel="noopener noreferrer">
+                                      <svg class="work-icon" width="32" height="32">
+                                        <use href="#icon-github" />
+                                      </svg>
+                                    </a>
+                                  </div>
+                            </div>
                             <p>
-                                Coded the K-Means algorithm from scratch and designed a demo interface in Kotlin. Prompts
-                                users for dataset size and shape, along with an appropriate k value, and demonstrates the algorithm 
-                                in a play-by-play. Using my demo, I taught the k-means algorithm to a class of 15 students.
+                                Led a team of three to develop a Flappy Bird clone in C using SDL for graphics and game loop logic, collaborating via pair programming. We structured the project using MVC code architecture for modularity and maintainability. We configured builds with CMake and implemented comprehensive unit tests to evaluate edge case behavior.
                             </p>
-                            <ul>
-                                <li>Visual Interface</li>
-                                <li>Kotlin</li>
-                                <li>Algorithms</li>
-                            </ul>
-                            <div class="work-links-left">
-                                <a href="", target="_blank"><img src="./Assets/githubicon.svg" alt="github"></a>
-                                <a href="", target="_blank"><img src="./Assets/presentationicon.svg" alt="slide deck"></a>
-                                <a href="" target="_blank"><img src="./Assets/videoicon.svg" alt="video"></a> 
+                            <div class="work-tags">
+                                <span class="skill-tag" skill="c">C (CMake, SDL)</span>
+                                <span class="skill-tag" skill="test-driven-development">Test Driven Development</span>
+                                <span class="skill-tag" skill="model-view-frameworks">Model-View Frameworks (MVC)</span>
+                                <span class="skill-tag" skill="git">Git</span>
+                                <span class="skill-tag" skill="automated-unit-testing">Automated Unit Testing</span>
                             </div>
                         </div>
                     </div>
-                    <div class="work-item-left">
-                        <div class="work-image-left">
-                            <img src="./Assets/dahliabanner.png" alt="colorful app screens">
+                    <div class="work-item">
+                        <div class="work-image">
+                            <img src="./Assets/banners/graphcoloringbanner.png" alt="colored interconnected nodes">
                         </div>
-                        <div class="work-text-left">
-                            <h3>Dahlia</h3>
-                            <h4>Health Tracking for Chronic Illness and Disability</h4>
+                        <div class="work-text">
+                            <div class="work-header">
+                                <h3>Graph Coloring Algorithms</h3>
+                                <div class="work-links">
+                                    <a href="https://github.com/crane919/graph-coloring" target="_blank" rel="noopener noreferrer">
+                                      <svg class="work-icon" width="32" height="32">
+                                        <use href="#icon-github" />
+                                      </svg>
+                                    </a>
+                                  </div>
+                            </div>
                             <p>
-                                Dahlia is a build-it-yourself
-                                health tracking app where users can create custom trackers for symptoms, medications, 
-                                and more. As a passion project, Dahlia has improved my skills in
-                                in wireframing, interface design, and UI.
+                                My team and I implemented multiple graph coloring strategies in Python, including brute-force, greedy, Welsh-Powell, and DSatur algorithms. I led the build of a random graph generator with customizable inputs for number of nodes and amount of connectivity, and a visualization tool to compare identical graphs colored with different algorithms. We analyzed theoretical and empirical time complexity to explore performance trade-offs across heuristic and exhaustive approaches to NP-hard graph coloring, and summarized our findings in a computational essay.
                             </p>
-                            <ul>
-                                <li>Swift</li>
-                                <li>Figma</li>
-                                <li>Adobe Illustrator</li>
-                            </ul>
-                            <div class="work-links-left">
-                                <a href="https://github.com/EvesK/health_tracking_app_2023", target="_blank"><img src="./Assets/githubicon.svg" alt="github"></a>
-                                <a href="https://www.figma.com/file/7BoTdNBSZPXCmjJiQidCqb/Dahlia?type=design&node-id=1%3A5296&mode=design&t=H4l1tA2NbXRg5P1z-1", target="_blank"><img src="./Assets/figmaicon.svg" alt="figma"></a>
-                                <a href="https://youtu.be/OSe24RNydJA" target="_blank"><img src="./Assets/videoicon.svg" alt="video"></a> 
+                            <div class="work-tags">
+                                <span class="skill-tag" skill="python">Python (matplotlib)</span>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="work-item-left">
-                        <div class="work-image-left">
-                            <img src="./Assets/dahliabanner.png" alt="colorful app screens">
+                    <div class="work-item">
+                        <div class="work-image">
+                            <img src="./Assets/banners/shortestpathbanner.png" alt="interconnected nodes with blue line showing the shortest path">
                         </div>
-                        <div class="work-text-left">
-                            <h3>Shortest Path Algorithms</h3>
-                            <h4>Comparing shortest path algorithms' speed and accuracy in various scenarios.</h4>
+                        <div class="work-text">
+                            <div class="work-header">
+                                <h3>Shortest Path Algorithm Comparison</h3>
+                                <div class="work-links">
+                                    <a href="https://github.com/crane919/shortest-path" target="_blank" rel="noopener noreferrer">
+                                      <svg class="work-icon" width="32" height="32">
+                                        <use href="#icon-github" />
+                                      </svg>
+                                    </a>
+                                  </div>
+                            </div>
                             <p>
-                                With a team of three, I developed a demo interface to showcase the workings of Dijkstra, 
-                                A*, and Bellman-Ford algorithms. I contributed a random graph generator and a graph visualization program 
-                                that displays the graphs with the shortest path for easy comparison, along with the implementation code
-                                for the Djikstra and A* algorithms. My team and I compiled a computational essay as well as a lesson
-                                to highlight the strengths and weaknesses of each algorithm to a class of 30 students.
-
+                                My team and I developed a Python tool to visualize Dijkstra&#39;s, A*, and Bellman-Ford algorithms on randomly generated graphs. I built a custom random graph generator with adjustable parameters (e.g., node count, edge density) to simulate diverse scenarios, and co-authored an interactive computational essay demo that compares pathfinding behavior and algorithm performance. Lastly, we designed a modified pathfinding algorithm that finds the closest path of a particular (user inputted) length, avoiding simple loops.
                             </p>
-                            <ul>
-                                <li>Python</li>
-                                <li>Algorithm Optimization</li>
-                                <li>Computational Essay</li>
-                            </ul>
-                            <div class="work-links-left">
-                                <a href="", target="_blank"><img src="./Assets/githubicon.svg" alt="github"></a>
-                                <a href="", target="_blank"><img src="./Assets/presentationicon.svg" alt="slide deck"></a>
-
+                            <div class="work-tags">
+                                <span class="skill-tag" skill="python">Python (matplotlib)</span>
                             </div>
                         </div>
-                    </div> -->
-                    <!-- <div class="work-item-right">
-                        <div class="work-image-right">
-                            <img src="./Assets/portfoliobanner.png" alt="logo with text evelyn kessler, front end software engineer">
-                        </div>
-                        <div class="work-text-right">
-                            <h3>evelynkessler.com</h3>
-                            <h4>Building a portfolio website.</h4>
+                    </div>
+                    <div class="work-item text-only">
+                        <div class="work-text">
+                            <div class="work-header">
+                                <h3>CYK Algorithm</h3>
+                                <div class="work-links">
+                                    <a href="https://github.com/EvesK/FOCSfinal" target="_blank" rel="noopener noreferrer">
+                                      <svg class="work-icon" width="32" height="32">
+                                        <use href="#icon-github" />
+                                      </svg>
+                                    </a>
+                                  </div>
+                            </div>
                             <p>
-                                This website was built from scratch using HTML, CSS, and a touch of JavaScript. I'm particularly proud of the
-                                AAA accessible color scheme and screen reader friendly HTML containers.
+                                My partner and I implemented the CYK parsing algorithm in Haskell, which determines whether a string belongs to a language defined by a context-free grammar in Chomsky Normal Form. CYK is a foundational parsing technique in natural language processing (NLP), forming the basis for syntactic analysis in compilers, text recognition systems, and early AI language models.
                             </p>
-                            <ul>
-                                <li>Adobe Illustrator</li>
-                                <li>Web Hosting and Domains</li>
-                                <li>JavaScript</li>
-                                <li>HTML & CSS</li>
-                                <li>Web Accessiblity</li>
-                            </ul>
+                            <div class="work-tags">
+                                <span class="skill-tag" skill="haskell">Haskell</span>
+                                <span class="skill-tag" skill="pair-programming">Pair Programming</span>
+                            </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </section>
         </main>
 
         <footer id="footer">
-            <h2>Coded From Scratch By Molly Kessler</h2>
+            <h2>Coded From Scratch</h2>
             <ul>
-                <li><a href="mailto: molly@healthea.org">Email</a></li>
-                <li><a href="./Assets/Resume-EvelynKessler.pdf" target="_blank">Resume</a></li>
-                <li><a href="https://github.com/EvesK" target="_blank">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/kessler24/" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto: molly@healthea.org">molly@healthea.org</a></li>
+                <li><a href="tel: 650-762-4470">(650) 762 - 4470</a></li>
+                <li><a href="https://www.linkedin.com/in/kessler24/" target="_blank">linkedin.com/in/kessler24</a></li>
+                <li><a href="https://github.com/EvesK" target="_blank">github.com/EvesK</a></li>
             </ul>
         </footer>
 
         <script>
             $(document).ready(function() {
-                var loader = $("#preloader");
-                var gifElement = $('#loader-gif');
-                var originalSrc = gifElement.attr('src');
+                // var loader = $("#preloader");
+                // var gifElement = $('#loader-gif');
+                // var originalSrc = gifElement.attr('src');
 
-                gifElement.on('click', function() {
-                    gifElement.attr('src', '');
-                    setTimeout(function() {
-                        gifElement.attr('src', originalSrc);
-                    }, 0);
-                });
+                // gifElement.on('click', function() {
+                //     gifElement.attr('src', '');
+                //     setTimeout(function() {
+                //         gifElement.attr('src', originalSrc);
+                //     }, 0);
+                // });
 
-                function resetGif() {
-                    gifElement.attr('src', '');
-                    setTimeout(function() {
-                        gifElement.attr('src', originalSrc);
-                    }, 0);
-                }
+                // function resetGif() {
+                //     gifElement.attr('src', '');
+                //     setTimeout(function() {
+                //         gifElement.attr('src', originalSrc);
+                //     }, 0);
+                // }
                 
-                resetGif();
+                // resetGif();
 
-                function loadFunction() {
-                    loader.fadeOut(500);
-                    loader.style.display = "none";
-                }
+                // function loadFunction() {
+                //     loader.fadeOut(500);
+                //     loader.style.display = "none";
+                // }
 
-                setTimeout(loadFunction, 2500);    
-                
-                $('#navbar a[href^="#"]').on('click', function(e) {
+                // setTimeout(loadFunction, 2500);    
+
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
                     e.preventDefault();
 
-                    var target = $(this.hash);
-                    $('html, body').animate({
-                        scrollTop: target.offset().top
-                    }, 800); 
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (!target) return;
+
+                    const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+                    const startPosition = window.scrollY;
+                    const distance = targetPosition - startPosition;
+                    const duration = 1000; // duration in milliseconds (1000ms = 1s)
+                    let startTime = null;
+
+                    function animation(currentTime) {
+                    if (startTime === null) startTime = currentTime;
+                    const timeElapsed = currentTime - startTime;
+                    const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+                    window.scrollTo(0, run);
+                    if (timeElapsed < duration) requestAnimationFrame(animation);
+                    }
+
+                    // Easing function for smooth effect
+                    function easeInOutQuad(t, b, c, d) {
+                    t /= d / 2;
+                    if (t < 1) return c / 2 * t * t + b;
+                    t--;
+                    return -c / 2 * (t * (t - 2) - 1) + b;
+                    }
+
+                    requestAnimationFrame(animation);
+                });
+                });
+
+
+                document.querySelectorAll('.skill-tag').forEach(tag => {
+                    tag.addEventListener('click', () => {
+                    const skill = tag.textContent;
+                    console.log(`Clicked on: ${skill}`);
+                    // placeholder for future action
+                    });
                 });
             });
         </script>
