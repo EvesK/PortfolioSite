@@ -354,12 +354,6 @@ h2 {
 
 @media only screen and (max-width: 1200px) {
     .skills-container {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .skills-container {
         grid-template-columns: 1fr;
     }
     .work-item {
@@ -367,7 +361,7 @@ h2 {
     }
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 760px) {
     .about-main {
         font-size: 1.3em;
         margin-bottom: 45px;
